@@ -137,7 +137,8 @@ def write_template(ingress, nginx_conf, args):
             cors_allow_origin=args.cors_allow_origin,
             cors_allow_methods=args.cors_allow_methods,
             cors_allow_headers=args.cors_allow_headers,
-            cors_expose_headers=args.cors_expose_headers)
+            cors_expose_headers=args.cors_expose_headers,
+            allow_header_underscores=args.allow_header_underscores)
 
     # Save nginx conf
     try:
